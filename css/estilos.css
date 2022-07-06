@@ -1,12 +1,22 @@
 
 
-#footer {color: #006d77;}
+.footerindex2 {
+   color: #caf0f8;
+   padding: 50px;
+   background-color: #0077b6; 
+}
+
+.footerservicios {
+   color: #caf0f8;
+   padding: 50px;
+   background-color: #0077b6; 
+}
 
 body {
-   background-color: #edf6f9;
+   background-color: #caf0f8;
  }
 
-
+/*
 .encabezado__menu{
    list-style: none;
    font-size:0;
@@ -15,7 +25,8 @@ body {
 
 .encabezado__menu li{
 
-   display: inline-block;
+   display: flex;
+   flex-direction: column;
    color: #006d77;
    position: relative;
    font-size: 20px;
@@ -39,8 +50,76 @@ body {
    display: block;
    font-family: 'Joan', serif;
 }
+*/
+
+/*menu*/
 
 
+ 
+
+
+ 
+   .navigation {
+      display: flex;
+      justify-content: flex-end;
+      list-style: none;
+      margin: 0; 
+      background: #0077b6;
+      flex-flow: column wrap;
+      padding: 0;
+   }
+
+   .navigation a { 
+     text-decoration: none;
+     display: block;
+     color: white;
+     text-align: center; 
+     padding: 10px;
+     border-top: 1px solid rgba(255, 255, 255,0.3); 
+     border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+   }
+   
+
+   .navigation__submenu{
+      position:sticky;
+      display: none;
+   }
+
+
+   .navigation__submenu a { 
+      text-decoration: none;
+      display: block;
+      color: white;
+      text-align: center; 
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255,0.3); 
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+
+    .navigation__submenu li {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+      list-style: none;
+      margin: 0; 
+      background: #0077b6;
+      flex-flow: column wrap;
+      padding: 0;
+   }
+
+   .navigation a:hover {
+      background: #03045e;
+    }
+    
+    
+    .navigation:hover .navigation__submenu{
+      display: flex;
+      flex-direction: column;
+   }
+
+   .navigation li:last-of-type a {
+      border-bottom: none;
+    }
 
 /*.body__noticias{
 	height: 300px;
@@ -60,25 +139,28 @@ body {
 } */
 
 .body__noticias{
-	height: 600px;
+	height: 500px;
    width: 100%;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: 0.5fr 2fr 0.5fr;
-   grid-template-areas: 
+   grid-template-rows: 1fr 1fr;
+/*   grid-template-areas: 
    "item1 item2 item3"
-   "item7 item8 item9"
-   "item4 item5 item6";
+   "item7 item8 item9";
+   grid-column-gap: 10px;
+   grid-row-gap: 20px;*/
 }
 
 .body__noticias div{
-   height: 100px;
-   font-size: auto;  
+ /*  height: 100px; */
+ /*  font-size: auto;  */
    font-family: 'Joan', serif;
    background-color: #ffddd2;
-   border: solid 1px #e29578;
+   justify-items: center;
+/*   border: solid 1px #e29578;*/
 }
 
+/*
 .body__noticias__somos{ grid-area: item1;}
 .body__noticias__servicios {grid-area: item2;}
 .body__noticias__contactenos{grid-area: item3;}
@@ -87,8 +169,9 @@ body {
 .body__noticias__contactenos__img{grid-area: item6;}
 .body__noticias__somos__p{grid-area: item7;}
 .body__noticias__servicios__p{grid-area: item8;}
-.body__noticias__contactenos__p{grid-area: item9;}
+.body__noticias__contactenos__p{grid-area: item9;}*/
 
+.body__noticias__somos__p{justify-self: start;}
 
  
 
@@ -133,7 +216,7 @@ body {
 
  }
 
-.slide {
+/*.slide {
    position: relative;
    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
    margin-top: 26px;
@@ -238,8 +321,8 @@ body {
 #slide-3:checked ~ .control-3 ~ .slide-indicador 
      li:nth-child(3) .slide-circulo {
    color: #428bca;
-}
-
+}*/
+/*
 #titulo {
    width: 100%;
    position: absolute;
@@ -254,3 +337,350 @@ body {
         -1px 0px 2px rgba(255, 255, 255, 0);
 }
 
+/*celular*/
+
+/*index*/
+
+
+.containerindex2 {  display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 0.1fr 0.5fr 1fr 1fr 0.2fr;
+   gap: 1px 1px;
+   grid-auto-flow: row;
+   grid-template-areas:
+     "main"
+     "Servicios"
+     "contactenos"
+     "nav"
+     "footer";
+ }
+ 
+ .navindex2 {
+   justify-self: stretch;
+   grid-area: nav;
+ }
+ 
+ .mainindex2 { 
+   grid-area: main; 
+}
+ 
+ .footerindex2 { grid-area: footer; }
+ 
+ .contactenosindex2 {
+   justify-self: center;
+   align-self: start;
+   grid-area: contactenos;
+ }
+ 
+ .Serviciosindex2 {
+   justify-self: center;
+   align-self: center;
+   grid-area: Servicios;
+ }
+
+ /*servicios*/
+
+ .containerservicios {  display: grid;
+   grid-template-columns: 1.5fr;
+   grid-template-rows: 0.3fr 0.5fr 1.5fr 1.5fr 1.5fr 1.5fr 0.3fr;
+   gap: 1px 1px;
+   grid-auto-flow: row;
+   grid-template-areas:
+     "mainservicios"
+     "servicio1servicios"
+     "servicio2servicios"
+     "servicio3servicios"
+     "servicio4servicios"
+     "navservicios"
+     "footerservicios";
+ }
+ 
+ .navservicios {
+   justify-self: stretch;
+   grid-area: navservicios;
+ }
+ 
+ .mainservicios { grid-area: mainservicios; }
+ 
+ .footerservicios { grid-area: footerservicios; }
+ 
+ .servicio1servicios { 
+   grid-area: servicio1servicios; 
+   justify-self: center;
+   align-self: start;
+ }
+ 
+ .servicio2servicios { 
+   justify-self: center;
+   align-self: center;
+   grid-area: servicio2servicios; 
+ }
+ 
+ .servicio3servicios { 
+   justify-self: center;
+   align-self: center;
+   grid-area: servicio3servicios; 
+ }
+ 
+ .servicio4servicios { 
+   justify-self: center;
+   align-self: center;
+   grid-area: servicio4servicios; 
+ }
+ 
+
+
+ /*index2 grid tablet*/
+
+ @media screen and (min-width:768px){
+
+   .navigation {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      
+      list-style: none;
+      margin: 0; 
+      background: #0077b6;
+    }
+    
+    .navigation a {
+      text-decoration: none;
+      display: block;
+      padding: 1em;
+      color: white;
+    }
+   
+    .navigation__submenu{
+      position:absolute;
+      display: none;
+      bottom: 330px;
+   }
+
+    .navigation__submenu li {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      list-style: none;
+      margin: 0; 
+      background: #0077b6;
+    }
+    
+    .navigation__submenu a {
+      text-decoration: none;
+      display: block;
+      padding: 1em;
+      color: white;
+    }  
+  
+    .encabezado__menu{
+      list-style: none;
+      font-size:0;
+      font-family: 'Joan', serif;
+      }
+   
+   .encabezado__menu li{
+   
+      display: inline-block;
+      color: #006d77;
+      position: relative;
+      font-size: 20px;
+      padding: 20px;
+      font-family: 'Joan', serif;
+   }
+   
+   .encabezado__menu__submenu{
+      position: absolute;
+      display: none;
+      font-family: 'Joan', serif;
+   }
+   
+   .encabezado__menu__submenu li{
+      display: block;
+      background-color: #428bca;
+      font-family: 'Joan', serif;
+   }
+   
+   .encabezado__menu li:hover .encabezado__menu__submenu{
+      display: block;
+      font-family: 'Joan', serif;
+   }
+   
+  
+
+   .containerindex2 {  display: grid;
+      grid-template-columns: 3fr 0.3fr;
+      grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+      gap: 2px 20px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "nav nav nav"
+        "main main main"
+        "Servicios Servicios contactenos"
+        "footer footer footer";
+    }
+    .contactenosindex2 {
+      justify-self: end;
+      align-self: center;
+      grid-area: contactenos;
+    }
+    
+    .Serviciosindex2 {
+      justify-self: start;
+      align-self: center;
+      grid-area: Servicios;
+    }
+
+ /*servicios tablet*/
+
+ .containerservicios {  display: grid;
+   grid-template-columns: 1.5fr 1.5fr;
+   grid-template-rows: 0.1fr 0.3fr 1.5fr 1.5fr 0.1fr;
+   gap: 2px 20px;
+   grid-auto-flow: row;
+   grid-template-areas:
+     "navservicios navservicios"
+     "mainservicios mainservicios"
+     "servicio1servicios servicio2servicios"
+     "servicio3servicios servicio4servicios"
+     "footerservicios footerservicios";
+ }
+ 
+ .servicio1servicios { 
+   grid-area: servicio1servicios; 
+   justify-self: start;
+   align-self: center;
+ }
+ 
+ .servicio2servicios { 
+   justify-self: end;
+   align-self: center;
+   grid-area: servicio2servicios; 
+ }
+ 
+ .servicio3servicios { 
+   justify-self: center;
+   align-self: center;
+   grid-area: servicio3servicios; 
+ }
+ 
+ .servicio4servicios { 
+   justify-self: center;
+   align-self: center;
+   grid-area: servicio4servicios; 
+ }
+
+
+ }
+
+
+
+
+
+
+ 
+/*index2 grid desktop*/
+@media screen and (min-width:1024px){
+
+   .navigation {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-end;
+      
+      list-style: none;
+      margin: 0; 
+      background: #0077b6;
+    }
+    
+    .navigation a {
+      text-decoration: none;
+      display: block;
+      padding: 1em;
+      color: white;
+    }
+
+    .navigation__submenu{
+      position:absolute;
+      display: none;
+      bottom: 300px;
+      right: 200px;
+   }
+
+    .navigation__submenu li {
+      display: flex;
+      flex-flow: row wrap;
+      flex-direction: column;
+      justify-content: flex-end;
+      list-style: none;
+      margin: 0; 
+      background: #0077b6;
+    }
+
+    .navigation__submenu a {
+      text-decoration: none;
+      display: block;
+      padding: 1em;
+      color: white;
+    }
+   
+   .containerindex2 {  display: grid;
+      grid-template-columns: 2fr 0.3fr 1fr;
+      grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+      gap: 1px 20px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "nav nav nav"
+        "main main main"
+        "Servicios . contactenos"
+        "footer footer footer";
+    }
+    .contactenosindex2 {
+      justify-self: end;
+      align-self: center;
+      grid-area: contactenos;
+    }
+    
+    .Serviciosindex2 {
+      justify-self: start;
+      align-self: center;
+      grid-area: Servicios;
+    }
+
+    .containerservicios {  display: grid;
+      grid-template-columns: 1.5fr 0.3fr 1.2fr;
+      grid-template-rows: 0.1fr 0.3fr 1.5fr 1.5fr 0.1 fr;
+      gap: 1px 20px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "navservicios navservicios navservicios"
+        "mainservicios mainservicios mainservicios"
+        "servicio1servicios . servicio2servicios"
+        "servicio3servicios . servicio4servicios"
+        "footerservicios footerservicios footerservicios";
+    }
+    
+    .servicio1servicios { 
+      grid-area: servicio1servicios; 
+      justify-self: start;
+      align-self: stretch;
+    }
+    
+    .servicio2servicios { 
+      justify-self: end;
+      align-self: start;
+      grid-area: servicio2servicios; 
+    }
+    
+    .servicio3servicios { 
+      justify-self: center;
+      align-self: center;
+      grid-area: servicio3servicios; 
+    }
+    
+    .servicio4servicios { 
+      justify-self: center;
+      align-self: center;
+      grid-area: servicio4servicios; 
+    }
+
+}
