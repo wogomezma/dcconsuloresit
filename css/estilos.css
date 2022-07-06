@@ -442,7 +442,8 @@ body {
       
       list-style: none;
       margin: 0; 
-      background: #0077b6;
+      background: rgb(0,119,182);
+      background: linear-gradient(180deg, rgba(0,119,182,1) 53%, rgba(202,240,248,1) 100%);
     }
     
     .navigation a {
