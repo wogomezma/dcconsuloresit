@@ -6,7 +6,7 @@
    background-color: #0077b6; 
 }
 
-.footerservicios {
+.footerser {
    color: #caf0f8;
    padding: 50px;
    background-color: #0077b6; 
@@ -64,7 +64,8 @@ body {
       justify-content: flex-end;
       list-style: none;
       margin: 0; 
-      background: #0077b6;
+      background: rgb(0,119,182);
+      background: linear-gradient(180deg, rgba(0,119,182,1) 53%, rgba(202,240,248,1) 100%);
       flex-flow: column wrap;
       padding: 0;
    }
@@ -348,10 +349,10 @@ body {
    gap: 1px 1px;
    grid-auto-flow: row;
    grid-template-areas:
+     "nav"
      "main"
      "Servicios"
      "contactenos"
-     "nav"
      "footer";
  }
  
