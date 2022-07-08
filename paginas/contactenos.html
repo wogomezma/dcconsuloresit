@@ -9,60 +9,135 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body class="containerservicios">
     <header class="navservicios">
-        <nav>
-            <ul class="navigation">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="somos.html">Quienes Somos</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="contactenos.html">Contactenos</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="mainservicios">
-
-    <section class="section__contactenos">
-
-    <h2>Contactenos</h2>
-    <p>Dejanos tu mensaje y te contactaremos en breve</p>
-    <form>
-        <label for="nombre">Nombre:</label>
-        <input type="nombre" placeholder="ingrese su nombre" name="nombre">
-
-        <br>
-        <label for="telefono">Telefono</label>
-        <input type="telefono" placeholder="ingrese su telefono" name="telefono">
-
-        <br>
-
-        <label for="email">email:</label>
-        <input type="email" name="" id="" placeholder="ingrese correo" name="email">
-
-        <br>
-
-        <label for="mensaje">Mensaje:</label>
-        <br>
-        <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
-        
-        <br>
-        <p>Acepta los terminos y condiciones</p>
-        <input type="radio" value="Si" name="terminos">Si
-        <input type="radio" value="No" name="terminos">No
-        <br>
-        <input type="submit" value="enviar">
-        <input type="reset" value="borrar">
-        <input type="button" value="sin accion">
+        <!--    <nav>
+                <ul class="navigation">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="somos.html">Quienes Somos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contactenos.html">Contactenos</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                </ul>
+            </nav> -->
+            <nav class="navigation navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">DCCONSULTORESIT</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="somos.html">Somos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contactenos.html">Contactenos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="noticias.html">Noticias</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
     
+    
+        </header>
+    
+    <main class="mainservicios section__servicios">
+        <div class="row">
+            <h1 class="h1 col-12">Contactenos</h1>
+        </div>
+        <div class="row">
+            <h3 class="h3 col-12">Dejanos tu mensaje y te contactaremos en breve</h3>
+        </div>
+        
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">Nombres</label>
+              <input type="text" class="form-control" id="validationCustom01" value="Nombres" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Apellidos</label>
+              <input type="text" class="form-control" id="validationCustom02" value="Apellidos" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustomUsername" class="form-label">Correo</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                  Ingrese su correo electronico.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="validationCustom03" required>
+              <div class="invalid-feedback">
+                Ingrese una ciudad.
+              </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">Estado</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                  Ingrese un Estado.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">Codigo Postal</label>
+              <input type="text" class="form-control" id="validationCustom05" required>
+              <div class="invalid-feedback">
+                Ingrese su codigo Postal.
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Acepta nuestras condiciones de Privacidad de datos
+                </label>
+                <div class="invalid-feedback">
+                  Debe aceptar nuestras condiciones de privacidad de datos
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+          </form>
+
+        </div>
+
+
     </form>
 
 </section>
 </main>
 
 <footer class="footerservicios">Derechos Reservados Walter Gomez</footer>
-
+<script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -351,7 +351,7 @@ body {
    gap: 1px 1px;
    grid-auto-flow: row;
    grid-template-areas:
-     "nav"
+     "navindex2"
      "main"
      "Servicios"
      "contactenos"
@@ -360,7 +360,7 @@ body {
  
  .navindex2 {
    justify-self: stretch;
-   grid-area: nav;
+   grid-area: navindex2;
  }
  
  .mainindex2 { 
@@ -389,12 +389,12 @@ body {
    gap: 1px 1px;
    grid-auto-flow: row;
    grid-template-areas:
+     "navservicios"
      "mainservicios"
      "servicio1servicios"
      "servicio2servicios"
      "servicio3servicios"
      "servicio4servicios"
-     "navservicios"
      "footerservicios";
  }
  
@@ -518,7 +518,7 @@ body {
       gap: 2px 20px;
       grid-auto-flow: row;
       grid-template-areas:
-        "nav nav nav"
+        "navindex2 navindex2 navindex2"
         "main main main"
         "Servicios Servicios contactenos"
         "footer footer footer";
@@ -631,7 +631,7 @@ body {
       gap: 1px 20px;
       grid-auto-flow: row;
       grid-template-areas:
-        "nav nav nav"
+        "navindex2 navindex2 navindex2"
         "main main main"
         "Servicios . contactenos"
         "footer footer footer";

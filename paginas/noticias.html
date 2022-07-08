@@ -9,31 +9,69 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body class="containerservicios">
     <header class="navservicios">
-        <nav>
-            <ul class="navigation">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="somos.html">Quienes Somos</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="contactenos.html">Contactenos</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="mainservicios">
-
-        <H1 class="section__servicios">Noticias</H1>
-        <ul class="section__servicios">
-            <li><a href="#noticia1">Noticia 1</a></li>
-            <li><a href="#noticia2">Noticia 2</a></li>
-            <li><a href="#noticia3">Noticia 3</a></li>
-            <li><a href="#noticia4">Noticia 4</a></li>
-        </ul>
+        <!--    <nav>
+                <ul class="navigation">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="somos.html">Quienes Somos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contactenos.html">Contactenos</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                </ul>
+            </nav> -->
+            <nav class="navigation navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">DCCONSULTORESIT</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="somos.html">Somos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contactenos.html">Contactenos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="noticias.html">Noticias</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
     
-    </main>
+    
+        </header>
+    
+        <main class="mainservicios">
+            <div class="row">
+                <h1 class="section__servicios h1 col-12">Noticias</h1>
+            </div>
+            <div class="row">
+            <ul class="section__servicios">
+                <li><a href="#noticia1">Noticia 1</a></li>
+                <li><a href="#noticia2">Noticia 2</a></li>
+                <li><a href="#noticia3">Noticia 3</a></li>
+                <li><a href="#noticia4">Noticia 4</a></li>
+            
+            </ul>
+            </div>
+        </main>
     
 <section  class="servicio1servicios">
     <article class="section__servicios">
@@ -73,6 +111,6 @@
 </section>
 
 <footer class="footerservicios">Derechos Reservados Walter Gomez</footer>
-
+<script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
