@@ -1,0 +1,109 @@
+.containerservicios{
+   display: grid;
+   grid-template-columns: 1.5fr;
+   grid-template-rows: 0.3fr 0.5fr 1.5fr 1.5fr 1.5fr 1.5fr 0.3fr;
+   gap: 1px 1px;
+   grid-auto-flow: row;
+   grid-template-areas:
+     "navservicios"
+     "mainservicios"
+     "servicio1servicios"
+     "servicio2servicios"
+     "servicio3servicios"
+     "servicio4servicios"
+     "footerservicios";
+     @media screen and (min-width:768px){
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr;
+        grid-template-rows: 0.1fr 0.3fr 1.5fr 1.5fr 0.1fr;
+        gap: 2px 20px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "navservicios navservicios"
+        "mainservicios mainservicios"
+        "servicio1servicios servicio2servicios"
+        "servicio3servicios servicio4servicios"
+        "footerservicios footerservicios";
+        @media screen and (min-width:1024px){
+            display: grid;
+            grid-template-columns: 1.5fr 0.3fr 1.2fr;
+            grid-template-rows: 0.1fr 0.3fr 1.5fr 1.5fr 0.1 fr;
+            gap: 1px 20px;
+            grid-auto-flow: row;
+            grid-template-areas:
+            "navservicios navservicios navservicios"
+            "mainservicios mainservicios mainservicios"
+            "servicio1servicios . servicio2servicios"
+            "servicio3servicios . servicio4servicios"
+            "footerservicios footerservicios footerservicios";
+
+        }
+     }
+
+ }
+
+
+.navservicios {
+    justify-self: stretch;
+    grid-area: navservicios;
+}
+  
+.mainservicios { grid-area: mainservicios; }
+  
+.footerservicios { grid-area: footerservicios; }
+  
+.servicio1servicios { 
+    grid-area: servicio1servicios; 
+    justify-self: center;
+    align-self: start;
+    @media screen and (min-width:768px){
+        justify-self: start;
+        align-self: center;
+        @media screen and (min-width:1024px){
+            justify-self: start;
+            align-self: stretch;
+        }
+    }
+}
+  
+.servicio2servicios { 
+    justify-self: center;
+    align-self: center;
+    grid-area: servicio2servicios; 
+    @media screen and (min-width:768px){
+        justify-self: end;
+        align-self: center;
+        @media screen and (min-width:1024px){
+            justify-self: end;
+            align-self: start;
+        }
+    }
+}
+  
+.servicio3servicios { 
+   justify-self: center;
+   align-self: center;
+    grid-area: servicio3servicios;
+    @media screen and (min-width:768px){
+        justify-self: center;
+        align-self: center;
+        @media screen and (min-width:1024px){
+            justify-self: center;
+            align-self: center;
+        }
+    }
+}
+  
+.servicio4servicios { 
+    justify-self: center;
+    align-self: center;
+    grid-area: servicio4servicios;
+    @media screen and (min-width:768px){
+        justify-self: center;
+        align-self: center;
+        @media screen and (min-width:1024px){
+            justify-self: center;
+            align-self: center;
+        }
+    }
+}

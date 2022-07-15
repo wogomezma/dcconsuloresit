@@ -1,0 +1,124 @@
+.footerservicios {
+  color: #caf0f8;
+  padding: 50px;
+  background: #0077b6;
+  background: linear-gradient(0deg, #0077b6 53%, #caf0f8 100%); }
+
+.containerservicios {
+  display: grid;
+  grid-template-columns: 1.5fr;
+  grid-template-rows: 0.3fr 0.5fr 1.5fr 1.5fr 1.5fr 1.5fr 0.3fr;
+  gap: 1px 1px;
+  grid-auto-flow: row;
+  grid-template-areas: "navservicios" "mainservicios" "servicio1servicios" "servicio2servicios" "servicio3servicios" "servicio4servicios" "footerservicios"; }
+  @media screen and (min-width: 768px) {
+    .containerservicios {
+      display: grid;
+      grid-template-columns: 1.5fr 1.5fr;
+      grid-template-rows: 0.1fr 0.3fr 1.5fr 1.5fr 0.1fr;
+      gap: 2px 20px;
+      grid-auto-flow: row;
+      grid-template-areas: "navservicios navservicios" "mainservicios mainservicios" "servicio1servicios servicio2servicios" "servicio3servicios servicio4servicios" "footerservicios footerservicios"; } }
+  @media screen and (min-width: 768px) and (min-width: 1024px) {
+    .containerservicios {
+      display: grid;
+      grid-template-columns: 1.5fr 0.3fr 1.2fr;
+      grid-template-rows: 0.1fr 0.3fr 1.5fr 1.5fr 0.1 fr;
+      gap: 1px 20px;
+      grid-auto-flow: row;
+      grid-template-areas: "navservicios navservicios navservicios" "mainservicios mainservicios mainservicios" "servicio1servicios . servicio2servicios" "servicio3servicios . servicio4servicios" "footerservicios footerservicios footerservicios"; } }
+
+.navservicios {
+  justify-self: stretch;
+  grid-area: navservicios; }
+
+.mainservicios {
+  grid-area: mainservicios; }
+
+.footerservicios {
+  grid-area: footerservicios; }
+
+.servicio1servicios {
+  grid-area: servicio1servicios;
+  justify-self: center;
+  align-self: start; }
+  @media screen and (min-width: 768px) {
+    .servicio1servicios {
+      justify-self: start;
+      align-self: center; } }
+  @media screen and (min-width: 768px) and (min-width: 1024px) {
+    .servicio1servicios {
+      justify-self: start;
+      align-self: stretch; } }
+
+.servicio2servicios {
+  justify-self: center;
+  align-self: center;
+  grid-area: servicio2servicios; }
+  @media screen and (min-width: 768px) {
+    .servicio2servicios {
+      justify-self: end;
+      align-self: center; } }
+  @media screen and (min-width: 768px) and (min-width: 1024px) {
+    .servicio2servicios {
+      justify-self: end;
+      align-self: start; } }
+
+.servicio3servicios {
+  justify-self: center;
+  align-self: center;
+  grid-area: servicio3servicios; }
+  @media screen and (min-width: 768px) {
+    .servicio3servicios {
+      justify-self: center;
+      align-self: center; } }
+  @media screen and (min-width: 768px) and (min-width: 1024px) {
+    .servicio3servicios {
+      justify-self: center;
+      align-self: center; } }
+
+.servicio4servicios {
+  justify-self: center;
+  align-self: center;
+  grid-area: servicio4servicios; }
+  @media screen and (min-width: 768px) {
+    .servicio4servicios {
+      justify-self: center;
+      align-self: center; } }
+  @media screen and (min-width: 768px) and (min-width: 1024px) {
+    .servicio4servicios {
+      justify-self: center;
+      align-self: center; } }
+
+body {
+  background-color: #caf0f8; }
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  background: #0077b6;
+  background: linear-gradient(180deg, #0077b6 53%, #caf0f8 100%);
+  flex-flow: column wrap;
+  padding: 0; }
+  .navigation a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+    .navigation a:hover {
+      background: #03045e; }
+
+.section__servicios {
+  list-style: none;
+  color: #e29578; }
+  .section__servicios li {
+    padding: 10px; }
+    .section__servicios li a {
+      color: #0077b6; }
+      .section__servicios li a:hover {
+        color: #e29578; }
