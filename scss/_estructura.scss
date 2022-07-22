@@ -43,6 +43,7 @@
  }
 
 
+
 .navservicios {
     justify-self: stretch;
     grid-area: navservicios;
@@ -50,7 +51,11 @@
   
 .mainservicios { grid-area: mainservicios; }
   
-.footerservicios { grid-area: footerservicios; }
+.footerservicios { grid-area: footerservicios;
+                display: flex;
+                flex-direction: row;
+
+}
   
 .servicio1servicios { 
     grid-area: servicio1servicios; 

@@ -1,7 +1,6 @@
 .footerservicios {
   color: #caf0f8;
   padding: 50px;
-  background: #0077b6;
   background: linear-gradient(0deg, #0077b6 53%, #caf0f8 100%); }
 
 .containerservicios {
@@ -36,7 +35,9 @@
   grid-area: mainservicios; }
 
 .footerservicios {
-  grid-area: footerservicios; }
+  grid-area: footerservicios;
+  display: flex;
+  flex-direction: row; }
 
 .servicio1servicios {
   grid-area: servicio1servicios;
@@ -91,7 +92,7 @@
       align-self: center; } }
 
 body {
-  background-color: #caf0f8; }
+  background-color: white; }
 
 .navigation {
   display: flex;
@@ -122,3 +123,44 @@ body {
       color: #0077b6; }
       .section__servicios li a:hover {
         color: #e29578; }
+
+/* Para metros Mixins */
+/* Parametros Maps */
+/* Extend -  MAP-GET - MIXNS */
+.derechosreservados {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: right 100px;
+  width: 500px;
+  height: 50px; }
+
+.boton, .boton__facebook, .boton__whatsapp {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 10px;
+  width: 100px;
+  height: 50px;
+  color: black;
+  border-radius: 20px;
+  border: 1px solid black;
+  background-color: white; }
+
+.boton__facebook {
+  background-color: #3a5795;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 10px;
+  width: 100px;
+  height: 50px; }
+
+.boton__whatsapp {
+  background-color: #00bb2d;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 10px;
+  width: 100px;
+  height: 50px; }

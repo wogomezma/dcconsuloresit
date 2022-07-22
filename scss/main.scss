@@ -2,11 +2,20 @@ $colorfondo: #caf0f8;
 $colortexto: #e29578;
 $colormenu: rgb(0,119,182);
 $colormenudegrade: linear-gradient(180deg, rgba(0,119,182,1) 53%, rgba(202,240,248,1) 100%);
+$condicionaltema: claro;
+
+ 
 @import "noticias";
 @import "estructura";
 
 body{
-    background-color: $colorfondo;
+    @if $condicionaltema == oscuro {
+        background-color: black;
+    } @else if $condicionaltema == claro {
+        background-color: white;
+    } @else if {
+        background-color: $colorfondo;
+    }
 }
 
 .navigation {
@@ -15,7 +24,7 @@ body{
     list-style: none;
     margin: 0; 
     background: $colormenu;
-    background: $colormenudegrade;
+    background: linear-gradient(180deg, rgba(0,119,182,1) 53%, rgba(202,240,248,1) 100%);
     flex-flow: column wrap;
     padding: 0;
     a { 
@@ -46,5 +55,59 @@ body{
     }
 
 }
+
+
+
+/* Para metros Mixins */
+
+@mixin footernoticias($paddingd, $ancho, $alto)  {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: $paddingd;
+    width: $ancho;
+    height: $alto;
+}
+
+
+/* Parametros Maps */
+
+$footerredes: (
+    instagram: white,
+    facebook: #3a5795,
+    whatsapp: #00bb2d
+  );
+
+
+/* Extend -  MAP-GET - MIXNS */
+
+.derechosreservados{
+    @include footernoticias(right 100px, 500px, 50px)
+}
+
+
+.boton {
+    @include footernoticias(10px, 100px, 50px)
+    color: black;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: map-get($footerredes , instagram);
+}
+
+.boton__facebook {
+    @extend .boton;
+    background-color: map-get($footerredes , facebook);
+    @include footernoticias(10px, 100px, 50px)
+}
+
+.boton__whatsapp {
+    @extend .boton;
+    background-color: map-get($footerredes , whatsapp);
+    @include footernoticias(10px, 100px, 50px)
+}
+
+
+
+
 
 
