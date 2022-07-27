@@ -10,13 +10,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <meta name="keywords" content="tecnologia, ti, consultoria, itil">
+    <meta name="description" content="contactenos si se requiere apoyo en consultorias en tecnologia, procesos de tecnologia, capacitaciones, proyectos y servicios">
+
 </head>
 <body class="containerservicios">
     <header class="navservicios">
             <nav class="navigation navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">DCCONSULTORESIT</a>
+                  <a class="navbar-brand" href="../index.html">DCCONSULTORESIT</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -46,89 +49,113 @@
                 </div>
               </nav>
     
-    
         </header>
     
     <main class="mainservicios section__servicios">
         <div class="row">
             <h1 class="h1 col-12">Contactenos</h1>
         </div>
-        <div class="row">
-            <h3 class="h3 col-12">Dejanos tu mensaje y te contactaremos en breve</h3>
+  <section>      
+  <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <form class="form-horizontal" method="post">
+                    <fieldset>
+                        <legend class="header">Dejanos tu mensaje y te contactaremos en breve</legend>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="fname" name="name" type="text" placeholder="Nombres" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="lname" name="name" type="text" placeholder="Apellidos" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="email" name="email" type="text" placeholder="Correo Electronico" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="phone" name="phone" type="text" placeholder="Telefono" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <textarea class="form-control" id="message" name="message" placeholder="Introduzca su mensaje aquí. Nos pondremos en contacto con usted dentro de los siguientes dias." rows="7"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </div>
-        
-        <form class="row g-3 needs-validation" novalidate>
-            <div class="col-md-4">
-              <label for="validationCustom01" class="form-label">Nombres</label>
-              <input type="text" class="form-control" id="validationCustom01" value="Nombres" required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-            <div class="col-md-4">
-              <label for="validationCustom02" class="form-label">Apellidos</label>
-              <input type="text" class="form-control" id="validationCustom02" value="Apellidos" required>
-              <div class="valid-feedback">
-                Recuerda que debe ser tus apellidos
-              </div>
-            </div>
-            <div class="col-md-4">
-              <label for="validationCustomUsername" class="form-label">Correo</label>
-              <div class="input-group has-validation">
-                <span class="input-group-text" id="inputGroupPrepend">@</span>
-                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-                <div class="invalid-feedback">
-                  Ingrese su correo electronico.
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <label for="validationCustom03" class="form-label">Ciudad</label>
-              <input type="text" class="form-control" id="validationCustom03" required>
-              <div class="invalid-feedback">
-                Ingrese una ciudad.
-              </div>
-            </div>
-            <div class="col-md-6">
-                <label for="validationCustom03" class="form-label">Estado</label>
-                <input type="text" class="form-control" id="validationCustom03" required>
-                <div class="invalid-feedback">
-                  Ingrese un Estado.
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <label for="validationCustom05" class="form-label">Codigo Postal</label>
-              <input type="text" class="form-control" id="validationCustom05" required>
-              <div class="invalid-feedback">
-                Ingrese su codigo Postal.
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                <label class="form-check-label" for="invalidCheck">
-                  Acepta nuestras condiciones de Privacidad de datos
-                </label>
-                <div class="invalid-feedback">
-                  Debe aceptar nuestras condiciones de privacidad de datos
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <button class="btn btn-primary" type="submit">Enviar</button>
-            </div>
-          </form>
-
-        </div>
-
-
-    </form>
+    </div>
+</div>
 
 </section>
+
 </main>
 
-<footer class="footerservicios">Derechos Reservados Walter Gomez</footer>
+<footer class="footerservicios bg-light text-center text-white">
+
+  <div class="container p-4 pb-0">
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #3b5998;"
+        href="https://facebook.com"
+        role="button"
+        ><i class="fab fa-facebook-f">Facebook</i>
+      </a>
+
+
+      <!-- Instagram -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #ac2bac;"
+        href="https://instagram.com"
+        role="button"
+        ><i class="fab fa-instagram">Instagram</i
+      ></a>
+
+      <!-- Linkedin -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #0082ca;"
+        href="https://linkedin.com"
+        role="button" 
+        ><i class="fab fa-linkedin-in">Linkedin</i
+      ></a>
+
+    </section>
+  </div>
+
+<!-- Copyright -->
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  © 2022 Copyright:
+  <a class="text-white" href="https://www.google.com/">Walter Gomez</a>
+</div>
+
+</footer>
 <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

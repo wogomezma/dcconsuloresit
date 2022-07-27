@@ -2,12 +2,11 @@ $colorfondo: #caf0f8;
 $colortexto: #e29578;
 $colormenu: rgb(0,119,182);
 $colormenudegrade: linear-gradient(180deg, rgba(0,119,182,1) 53%, rgba(202,240,248,1) 100%);
-$condicionaltema: claro;
+$condicionaltema: ninguno;
 
  
 @import "noticias";
 @import "estructura";
-
 body{
     @if $condicionaltema == oscuro {
         background-color: black;
@@ -36,7 +35,7 @@ body{
         border-top: 1px solid rgba(255, 255, 255,0.3); 
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         &:hover{
-            background: #03045e;
+            background: #caf0f8;
         }
       }
 }
@@ -44,8 +43,13 @@ body{
 .section__servicios{
     list-style: none;
     color: #e29578;
+    p{
+        padding: 1px;
+        color: black;
+    }
+    img{padding: 10px;}
     li{
-        padding: 10px;
+        padding: 20px;
         a{
             color: rgb(0,119,182);
             &:hover{
@@ -87,7 +91,7 @@ $footerredes: (
 
 
 .boton {
-    @include footernoticias(10px, 100px, 50px)
+    @include footernoticias(10px, 50px, 50px)
     color: black;
     border-radius: 20px;
     border: 1px solid black;
@@ -97,16 +101,25 @@ $footerredes: (
 .boton__facebook {
     @extend .boton;
     background-color: map-get($footerredes , facebook);
-    @include footernoticias(10px, 100px, 50px)
+    @include footernoticias(10px, 50px, 50px)
 }
 
 .boton__whatsapp {
     @extend .boton;
     background-color: map-get($footerredes , whatsapp);
-    @include footernoticias(10px, 100px, 50px)
+    @include footernoticias(10px, 50px, 50px)
 }
 
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 2px;
+}
 
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
 
 
 
