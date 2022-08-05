@@ -51,7 +51,7 @@
   
 .mainservicios { 
     grid-area: mainservicios; 
-    padding: 20px;
+    padding: 30px;
 }
   
 .footerservicios { 
@@ -66,6 +66,7 @@
     grid-area: servicio1servicios; 
     justify-self: center;
     align-self: start;
+    padding: 30px;
     @media screen and (min-width:768px){
         justify-self: start;
         align-self: center;
@@ -80,6 +81,7 @@
     justify-self: center;
     align-self: center;
     grid-area: servicio2servicios; 
+    padding: 30px;
     @media screen and (min-width:768px){
         justify-self: end;
         align-self: center;
@@ -89,10 +91,19 @@
         }
     }
 }
+
+/*.servicio2servicios iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    padding: 30px;
+}*/
   
 .servicio3servicios { 
    justify-self: center;
    align-self: center;
+   padding: 30px;
     grid-area: servicio3servicios;
     @media screen and (min-width:768px){
         justify-self: center;
@@ -108,6 +119,7 @@
     justify-self: center;
     align-self: center;
     grid-area: servicio4servicios;
+    padding: 30px;
     @media screen and (min-width:768px){
         justify-self: center;
         align-self: center;
