@@ -115,7 +115,7 @@
   @media screen and (min-width: 768px) {
     .containerindex2 {
       grid-template-columns: 3fr 0.3fr;
-      grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+      grid-template-rows: 0.1fr 0.5fr 1fr 0.1fr;
       gap: 2px 20px;
       grid-auto-flow: row;
       grid-template-areas: "navindex2 navindex2" "main main" "Servicios contactenos" "footer footer"; } }
@@ -123,7 +123,7 @@
     .containerindex2 {
       display: grid;
       grid-template-columns: 2fr 0.3fr 1fr;
-      grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+      grid-template-rows: 0.1fr 0.5fr 1fr 0.1fr;
       gap: 1px 20px;
       grid-auto-flow: row;
       grid-template-areas: "navindex2 navindex2 navindex2" "main main main" "Servicios . contactenos" "footer footer footer"; } }
